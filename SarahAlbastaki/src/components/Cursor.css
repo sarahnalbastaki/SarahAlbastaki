@@ -1,0 +1,30 @@
+.cursor {
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: radial-gradient(
+      rgb(245, 245, 183) 20%,
+      rgb(195, 243, 195) 30%,
+      white 70%,
+      #5d8cbf
+    );
+    background-size: 800% 800%;
+    animation: Gradient 15s ease infinite;
+    transform: translate(-50%, -50%);
+    filter: blur(3px);
+  }
+  
+  @keyframes Gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
